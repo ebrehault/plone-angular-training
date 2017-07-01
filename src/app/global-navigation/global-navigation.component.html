@@ -1,0 +1,18 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <a traverseTo="/">
+          <h1>Plone conference</h1>
+        </a>
+      </div>
+    </div>
+    <div class="menu">
+      <ul class="nav nav-tabs" role="tablist">
+        <li *ngFor="let link of links" [ngClass]="{'active': link.active}">
+          <a [traverseTo]="link.path">{{ link.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

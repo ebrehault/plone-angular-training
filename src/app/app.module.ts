@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { RESTAPIModule } from '@plone/restapi-angular';
 
 import { AppComponent } from './app.component';
+import { GlobalNavigationComponent } from './global-navigation/global-navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GlobalNavigationComponent
   ],
   imports: [
     BrowserModule,
