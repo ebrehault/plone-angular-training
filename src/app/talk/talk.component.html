@@ -1,0 +1,11 @@
+<div class="col-md-6">
+  <img [src]="context.image.scales.large.download" alt="Illustration" />
+</div>
+<div class="col-md-6">
+  <h1>{{ context.title }}</h1>
+  <p>
+    <span class="glyphicon glyphicon-user"></span> {{ context.speaker }}
+  </p>
+  <div [innerHTML]="context.text.data"></div>
+  <plone-comments></plone-comments>
+</div>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { PloneViews } from '@plone/restapi-angular';
+import { Traverser } from 'angular-traversal';
+import { TalkComponent } from './talk/talk.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,9 @@ import { PloneViews } from '@plone/restapi-angular';
 export class AppComponent {
   constructor(
     private views: PloneViews,
+    private traverser: Traverser,
   ) {
     this.views.initialize();
+    this.traverser.addView('view', 'talk', TalkComponent);
   }
 }
