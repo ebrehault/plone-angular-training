@@ -5,15 +5,18 @@ import { RESTAPIModule } from '@plone/restapi-angular';
 import { AppComponent } from './app.component';
 import { GlobalNavigationComponent } from './global-navigation/global-navigation.component';
 import { TalkComponent } from './talk/talk.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobalNavigationComponent,
-    TalkComponent
+    TalkComponent,
+    HomeComponent,
   ],
   entryComponents: [
     TalkComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

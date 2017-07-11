@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of news">
+    <a [traverseTo]="item['@id']">{{ item.title }}</a>
+  </li>
+</ul>

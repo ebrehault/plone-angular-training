@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PloneViews } from '@plone/restapi-angular';
 import { Traverser } from 'angular-traversal';
 import { TalkComponent } from './talk/talk.component';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -15,5 +16,6 @@ export class AppComponent {
   ) {
     this.views.initialize();
     this.traverser.addView('view', 'talk', TalkComponent);
+    this.traverser.addView('view', 'Plone Site', HomeComponent);
   }
 }
