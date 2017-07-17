@@ -1,5 +1,11 @@
-<ul>
-  <li *ngFor="let item of news">
-    <a [traverseTo]="item['@id']">{{ item.title }}</a>
-  </li>
-</ul>
+<div class="col-md-12 slider">
+  <div *ngFor="let item of news" class="slide"
+    [@flyInOut]="item.state">
+    <img [src]="item.image.download" />
+    <div>
+      <a [traverseTo]="item['@id']">{{ item.title }}</a>
+      <p>{{ item.description }}</p>
+    </div>
+    <i class="next-news glyphicon glyphicon-chevron-right" (click)="goTo(current+1)"></i>
+  </div>
+</div>

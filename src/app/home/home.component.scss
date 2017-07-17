@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+
+.slider {
+  position: relative;
+  padding: 0;
+  height: 400px;
+  overflow: hidden;
+}
+.slide {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto
+  }
+  & > div {
+    position: absolute;
+    top: 60%;
+    left: 66%;
+  }
+  a, p {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: $blue;
+    padding: 1.5em;
+  }
+  a {
+    font-weight: bold;
+    font-size: 120%;
+  }
+  p {
+    margin-top: 3em;
+  }
+  .next-news {
+    color: white;
+    position: absolute;
+    font-weight: strong;
+    right: 10px;
+    top: 10px;
+  }
+}
