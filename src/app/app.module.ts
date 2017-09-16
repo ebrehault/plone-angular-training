@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GlobalNavigationComponent } from './global-navigation/global-navigation.component';
 import { TalkComponent } from './talk/talk.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeComponent } from './home/home.component';
     GlobalNavigationComponent,
     TalkComponent,
     HomeComponent,
+    FooterComponent,
   ],
   entryComponents: [
     TalkComponent,

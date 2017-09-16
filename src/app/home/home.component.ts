@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ViewView } from '@plone/restapi-angular';
 import {
   trigger,
   state,
@@ -7,6 +6,8 @@ import {
   animate,
   transition
 } from '@angular/animations';
+
+import { ViewView } from '@plone/restapi-angular';
 
 @Component({
   selector: 'app-home',

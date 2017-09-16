@@ -1,0 +1,10 @@
+<div class="col-md-12 footer-container">
+  <ul>
+    <li *ngFor="let link of links">
+      <a [traverseTo]="link.remoteUrl">
+        <i [class]="'glyphicon glyphicon-'+link.icon"></i>
+        {{ link.title }}
+      </a>
+    </li>
+  </ul>
+</div>

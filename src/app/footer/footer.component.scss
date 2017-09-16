@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.footer-container {
+  background-color: $darkgrey;
+  color: white;
+  margin-top: 2em;
+}
+ul {
+  display: flex;
+}
+li {
+  flex-grow: 1;
+  padding: 1em;
+  list-style: none;
+  text-align: center;
+  i, a {
+    display: block;
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  i {
+    font-size: 130%;
+  }
+}
